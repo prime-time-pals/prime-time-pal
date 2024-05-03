@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'LTSaeada-regular';
+  src: url('/fonts/LTSaeada-Regular.otf');
+}
+
+@font-face {
+  font-family: 'LTSaeada-light';
+  src: url('/fonts/LTSaeada-Light.otf');
+}
+
+@font-face {
+  font-family: 'LTSaeada-extraLight';
+  src: url('/fonts/LTSaeada-ExtraLight.otf');
+}
+
+@font-face {
+  font-family: 'LTSaeada-thin';
+  src: url('/fonts/LTSaeada-Thin.otf');
+}
+
