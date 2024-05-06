@@ -153,9 +153,13 @@ import logo from "../assets/images/LOGO.svg"
 import hamburger from "../assets/images/Frame 60.svg"
 import close from "../assets/images/Close.svg"
 import whitePattern from "../assets/images/white-pattern.png"
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
     const [navbar, setNavbar] = useState(false);
+    const location = useLocation();
+
+    console.log(location)
 
     return (
         <nav className="md:flex items-center justify-between m-6 md:m-14 relative">
@@ -163,11 +167,11 @@ function Navbar() {
                 <header><img src={logo} alt="logo" /></header>
                 <div className="hidden md:flex md:justify-center md:items-center">
                   <ul className="md:flex gap-8">
-                    <li><a className="font-saeada-light block text-[#525252]" href="">Home</a></li>
-                    <li><a className="font-saeada-light block text-[#525252]" href="">About Us</a></li>
-                    <li><a className="font-saeada-light block text-[#525252]" href="">Activities</a></li>
-                    <li><a className="font-saeada-light block text-[#525252]" href="">Partner With Us</a></li>
-                    <li><a className="font-saeada-light block text-[#525252]" href="">Contact Us</a></li>
+                    <li><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/">Home</Link></li>
+                    <li><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/about-us' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/about-us">About Us</Link></li>
+                    <li><Link className="font-saeada-light block text-[#525252]" to="">Activities</Link></li>
+                    <li><Link className="font-saeada-light block text-[#525252]" to="">Partner With Us</Link></li>
+                    <li><Link className="font-saeada-light block text-[#525252]" to="">Contact Us</Link></li>
                   </ul>
                   <button className="relative text-white bg-gradient-to-r from-[#0070FF] to-[#0070FF] h-[50px] rounded-[20px] w-[150px] md:ml-6 font-saeada-light">
                     <img src={whitePattern} alt="backgroundImg" className="opacity-20 w-full h-full object-cover top-0 absolute mix-blend-overlay " />
@@ -202,11 +206,11 @@ function Navbar() {
                         <img src={close} width={30} height={30} alt="close" />
                     </button>
                     <ul className="md:flex gap-8 mt-8">
-                        <li className="mb-8"><a className="font-saeada-light block text-[#525252]" href="">Home</a></li>
-                        <li className="mb-8"><a className="font-saeada-light block text-[#525252]" href="">About Us</a></li>
-                        <li className="mb-8"><a className="font-saeada-light block text-[#525252]" href="">Activities</a></li>
-                        <li className="mb-8"><a className="font-saeada-light block text-[#525252]" href="">Partner With Us</a></li>
-                        <li className="mb-8"><a className="font-saeada-light block text-[#525252]" href="">Contact Us</a></li>
+                        <li className="mb-8"><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/">Home</Link></li>
+                        <li className="mb-8"><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/about-us' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/about-us">About Us</Link></li>
+                        <li className="mb-8"><Link className="font-saeada-light block text-[#525252]" to="">Activities</Link></li>
+                        <li className="mb-8"><Link className="font-saeada-light block text-[#525252]" to="">Partner With Us</Link></li>
+                        <li className="mb-8"><Link className="font-saeada-light block text-[#525252]" to="">Contact Us</Link></li>
                     </ul>
                     <div className="flex justify-center items-center"><button className="block text-center text-[#FF4D0A] border-[1.5px]  border-[#FF4D0A] h-[50px] rounded-[25px] w-[160px] font-saeada-regular">
                             
