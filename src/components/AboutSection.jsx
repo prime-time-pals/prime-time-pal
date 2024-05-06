@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
-import aboutImgLarge from "../assets/images/Side content.svg"
-import aboutImgSmall from "../assets/images/aboutSmall.svg"
 import whitePattern from "../assets/images/pattern-svg.svg"
 
-function AboutSection() {
+function AboutSection({ largeImage, smallImage }) {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
@@ -15,7 +13,7 @@ function AboutSection() {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    const aboutImg = isMobile ? aboutImgSmall : aboutImgLarge;
+    const aboutImg = isMobile ? smallImage : largeImage;
     return (
         <div className="mx-8 md:16 mb-10 mt-16 flex  items-center justify-center">
             <div className="flex flex-col md:flex-row">

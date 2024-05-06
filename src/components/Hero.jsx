@@ -1,7 +1,7 @@
-import heroImg from "../assets/images/hero-img.png";
+
 import whitePattern from "../assets/images/white-pattern.png"
 
-function Hero() {
+function Hero({ heroImg }) {
     return (
         <section className="gap-8 md:flex m-8 md:justify-center pt-8 md:h-[500px]">
             <div className="md:w-[500px]">
