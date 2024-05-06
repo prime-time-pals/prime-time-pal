@@ -2,7 +2,7 @@
   "name": "prime-time-pals",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Gospel-c.github.io/prime-time-pals",
+  "homepage": "https://prime-time-pals.github.io/prime-time-pals",
   "type": "module",
   "scripts": {
     "dev": "vite",
