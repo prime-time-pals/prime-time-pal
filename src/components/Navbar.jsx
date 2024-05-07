@@ -169,11 +169,11 @@ function Navbar() {
                   <ul className="md:flex gap-8">
                     <li><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/">Home</Link></li>
                     <li><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/about-us' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/about-us">About Us</Link></li>
-                    <li><Link className="font-saeada-light block text-[#525252]" to="">Activities</Link></li>
-                    <li><Link className="font-saeada-light block text-[#525252]" to="">Partner With Us</Link></li>
-                    <li><Link className="font-saeada-light block text-[#525252]" to="">Contact Us</Link></li>
+                    <li><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/activities' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/activities">Activities</Link></li>
+                    <li><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/partner' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/partner">Partner With Us</Link></li>
+                    <li><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/contact' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/contact">Contact Us</Link></li>
                   </ul>
-                  <button className="relative text-white bg-gradient-to-r from-[#0070FF] to-[#0070FF] h-[50px] rounded-[20px] w-[150px] md:ml-6 font-saeada-light">
+                  <button className="relative text-white bg-gradient-to-r from-[#0070FF] to-[#0070FF] h-[50px] rounded-[25px] w-[150px] md:ml-6 font-saeada-light">
                     <img src={whitePattern} alt="backgroundImg" className="opacity-20 w-full h-full object-cover top-0 absolute mix-blend-overlay " />
                     <p>Join Community</p>
                   </button>
@@ -208,9 +208,9 @@ function Navbar() {
                     <ul className="md:flex gap-8 mt-8">
                         <li className="mb-8"><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/">Home</Link></li>
                         <li className="mb-8"><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/about-us' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/about-us">About Us</Link></li>
-                        <li className="mb-8"><Link className="font-saeada-light block text-[#525252]" to="">Activities</Link></li>
-                        <li className="mb-8"><Link className="font-saeada-light block text-[#525252]" to="">Partner With Us</Link></li>
-                        <li className="mb-8"><Link className="font-saeada-light block text-[#525252]" to="">Contact Us</Link></li>
+                        <li className="mb-8"><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/activities' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/activities">Activities</Link></li>
+                        <li className="mb-8"><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/partner' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/partner">Partner With Us</Link></li>
+                        <li className="mb-8"><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/contact' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/contact">Contact Us</Link></li>
                     </ul>
                     <div className="flex justify-center items-center"><button className="block text-center text-[#FF4D0A] border-[1.5px]  border-[#FF4D0A] h-[50px] rounded-[25px] w-[160px] font-saeada-regular">
                             

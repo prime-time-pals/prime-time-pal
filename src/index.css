@@ -22,3 +22,9 @@
   src: url('/fonts/LTSaeada-Thin.otf');
 }
 
+@layer utilities {
+  .placeholder-red::after {
+    @apply content-[attr(data-placeholder-suffix)] text-red-500;
+  }
+}
+

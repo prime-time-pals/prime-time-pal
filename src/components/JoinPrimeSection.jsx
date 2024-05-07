@@ -8,7 +8,7 @@ function JoinPrimeSection() {
         <div className="relative px:8 md:px-16 py-24 bg-black ">
             <img className='absolute w-10 right-14 top-10 md:right-16 md:top-16' src={burstBloat} alt="" />
             <img className='absolute w-24 left-6 bottom-16' src={topology} alt="" />
-            <h2 className='font-saeada-regular font-bold text-center mb-12 text-[28px] md:text-[34px] text-[#0070FF]'>Why Join Prime Time Pals?</h2>
+            <h2 className='font-saeada-regular font-bold text-center px-8 mb-12 text-[28px] md:text-[34px] text-[#0070FF]'>Why Join Prime Time Pals?</h2>
             <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/2 mr-6">
                     {/* first row */}
