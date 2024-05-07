@@ -30,9 +30,8 @@ function Footer() {
                 </div>
                 <div className="md:flex-1 my-8 md:mt-0 font-saeada-regular md:flex md:flex-col justify-center text-[16px] text-[#5D5D5D] tracking-widest">
                     <h3 className="text-[20px] my-2  tracking-widest text-[#FF4D0A]">Contact Details</h3>
-                    <p className="my-4">+234 505 408 4536</p>
-                    <p className="my-4">primetimepals2024@gmail.com</p>
-                    <div className="my-8">
+                    <p className="my-4">primetimepalsng@gmail.com</p>
+                    <div className="my-4">
                         <img className="self-end" src={socialLinks} alt="" />
                     </div>
                 </div>

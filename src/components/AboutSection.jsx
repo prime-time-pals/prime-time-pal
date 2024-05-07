@@ -21,15 +21,15 @@ function AboutSection({ largeImage, smallImage }) {
                     <img className="object-cover w-full h-full" src={aboutImg} alt="image of old people" />
                 </div>
                 <div className="mt-12 md:w-1/2">
-                    <h2 className="text-[#0070FF] font-bold mb-4 text-[30px] font-saeada-regular">About Prime Time Pals</h2>
+                    <h2 className="text-[#0070FF] font-bold mb-4 text-[30px] px-2 font-saeada-regular">About Prime Time Pals</h2>
                     <div>
-                        <p className="text-[#4f4f4f] tracking-widest font-bold mb-4 font-saeada-thin">
+                        <p className="text-[#4f4f4f] px-2 tracking-widest mb-4 font-saeada-light">
                         A platform dedicated to combating loneliness and isolation among elderly individuals by fostering connections and support. With a mission centered on inclusivity and empathy, Prime Time Pals provides a welcoming environment where members can share experiences, forge friendships, and make lasting memories. 
                         </p>
-                        <p className="text-[#4f4f4f] tracking-widest font-bold mb-4 font-saeada-thin">
+                        <p className="text-[#4f4f4f] px-2 tracking-widest mb-4 font-saeada-light">
                         The platform offers a range of features, including community forums, events, activities, and resources tailored to enhance the social experience and quality of life for its members. Through compassion and understanding, Prime Time Pals aims to uplift and empower elderly individuals as they navigate the journey of aging gracefully. 
                         </p>
-                        <p className="text-[#4f4f4f] tracking-widest font-bold mb-4 font-saeada-thin">
+                        <p className="text-[#4f4f4f] px-2 tracking-widest mb-4 font-saeada-light">
                         Joining the community is easy and free, offering connections to older adults aged 50 to 70 in Nigeria and to explore new interests.
                         </p>
                     </div>

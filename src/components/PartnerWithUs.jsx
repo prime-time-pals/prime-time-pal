@@ -14,7 +14,7 @@ function PartnerWithUs() {
                     <br /> Collaborate with us to create impactful events, 
                     share valuable resources, and make a positive difference in the lives of seniors in our community.
                 </p>
-                <button className="relative text-[#FF4D0A] bg-[#f6f6f6] mb-6 border-[1.5px] px-2 border-[#FF4D0A] h-[60px] md:h-[70px] rounded-[30px] w-[160px] md:w-[250px] font-saeada-regular md:text-[24px]">
+                <button className="relative text-[#FF4D0A] bg-[#f6f6f6] mb-6 border-[1.5px] px-2 border-[#FF4D0A] h-[60px] md:h-[70px] rounded-[35px] w-[160px] md:w-[250px] font-saeada-regular md:text-[24px]">
                     Become A Partner
                 </button>
             </div>
