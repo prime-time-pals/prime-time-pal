@@ -28,3 +28,32 @@
   }
 }
 
+#check-box-1:checked ~ .check-1 {
+  @apply text-opacity-100;
+  /* animation: check-anime 0.5s 1 ease-in-out; */
+}
+
+#check-box-2:checked ~ .check-2 {
+  @apply text-opacity-100;
+  /* animation: check-anime 0.5s 1 ease-in-out; */
+}
+
+
+/* @keyframes check-anime {
+  0%, 100% {
+    @apply transform scale-100;
+  }
+  50% {
+    @apply transform scale-150 text-opacity-0;
+  }
+} */
+
+/* .radio-text {
+ 
+} */
+
+/* Optional: Style the radio button label to align with the text */
+.radio-label {
+  display: flex;
+  align-items: center;
+}

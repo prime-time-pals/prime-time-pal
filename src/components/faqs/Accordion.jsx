@@ -11,7 +11,7 @@ const Accordion = ({ item }) => {
 
         <div className={`px-[50px] border-b-2 lg:px-[0px] group ${ openAccordion ? 'is-active' : '' }`}>
         <div onClick={() => setOpenAccordion(!openAccordion)} className="cursor-pointer gap-8 flex items-center justify-between duration-500">
-          <h2 className="font-saeada-light text-[#4f4f4f] w-48 sm:w-auto text-[14px] lg:text-[26px] py-2 lg:mr-8 lg:py-4 duration-500">{item.question}</h2>
+          <h2 className="font-saeada-light text-[#4f4f4f] w-48 sm:w-auto text-[14px] lg:text-[20px] py-2 lg:mr-8 lg:py-4 duration-500">{item.question}</h2>
           {
             openAccordion ?
             <SlArrowUp className="text-sm lg:text-xl group-[.is-active]:font-bold duration-500" />

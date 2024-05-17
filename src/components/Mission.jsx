@@ -3,6 +3,7 @@ import whitePattern from "../assets/images/pattern-svg.svg"
 import missionImgL from "../assets/images/missionImgL.svg"
 import missionImgS from "../assets/images/missionImgS.svg"
 import burstBloat from "../assets/images/Burst-Bloat.svg";
+import { Link } from "react-router-dom";
 
 function Mission() {
     const [isMobile, setIsMobile] = useState(false);
@@ -20,7 +21,7 @@ function Mission() {
     return (
         <div className="md:mr-10 md:mb-[100px] overflow-hidden md:ml-0 mb-10 mt-16 flex items-center justify-center">
             <div className="flex  flex-col md:gap-16 justify-between md:flex-row">
-                <div className="relative flex justify-center pt-20 items-center bg-black w-full h-[300px] md:h-[450px] lg:h-[500px] md:pl-20 lg:w-[400px] md:w-[350px]">
+                <div className="relative flex justify-center pt-20 items-center bg-black md:ml-8 w-full h-[300px] md:h-[450px] lg:h-[500px] md:pl-20 lg:w-[400px] md:w-[350px]">
                     <img className='md:absolute hidden md:block w-10 right-14 top-10 md:right-16 md:top-4' src={burstBloat} alt="" />
                     <img className="md:absolute max-w-[250px] md:max-w-[300px] lg:max-w-[400px] md:top-[70px]" src={aboutImg} alt="image of old people" />
                 </div>
@@ -33,14 +34,18 @@ function Mission() {
                         
                     </div>
                     <div className="flex justify-center items-center flex-col md:flex-row">
-                        <button className="mb-4 md:mb-10 relative md:mt-0 text-white bg-gradient-to-r from-[#0070FF] to-[#0070FF] h-[50px] rounded-[25px] w-[160px] md:w-[150px] font-saeada-light">
-                            <img src={whitePattern} alt="backgroundImg" className="opacity-20 w-full h-full object-cover top-0 absolute mix-blend-overlay " />
-                            <p>Join Community</p>
-                        </button>
-                        <button className="relative text-[#FF4D0A] border-[1.5px] md:ml-4 px-2 border-[#FF4D0A] h-[50px] rounded-[25px] w-[160px] md:w-[200px] font-saeada-regular">
-                            
-                            Become A Partner
-                        </button>
+                        <Link to="/prime-time-pals/registration/">
+                            <button className="mb-4 relative md:mt-0 md:mb-0 text-white bg-gradient-to-r from-[#0070FF] to-[#0070FF] h-[50px] rounded-[25px] w-[160px] md:w-[150px] font-saeada-light">
+                                <img src={whitePattern} alt="backgroundImg" className="opacity-20 w-full h-full object-cover top-0 absolute mix-blend-overlay " />
+                                <p>Join Community</p>
+                            </button>
+                        </Link>
+                        <Link to="/prime-time-pals/partner/">
+                            <button className="relative text-[#FF4D0A] border-[1.5px] md:ml-4 px-2 border-[#FF4D0A] h-[50px] rounded-[25px] w-[160px] md:w-[200px] font-saeada-regular">
+                                
+                                Become A Partner
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

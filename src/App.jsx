@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 import Partner from "./pages/Partner";
 import Activities from "./pages/Activities";
+import { Registration } from "./pages/Registration";
+
 
 function App() {
   const router = createBrowserRouter([
@@ -29,6 +31,10 @@ function App() {
     {
       path:'/prime-time-pals/activities/',
       element: <Activities />
+    },
+    {
+      path:'/prime-time-pals/registration/',
+      element: <Registration />
     }
   ])
 

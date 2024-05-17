@@ -2,6 +2,7 @@ import sectionImg from '../assets/images/side-image.svg';
 import whitePattern from "../assets/images/pattern-svg.svg";
 import burstBloat from "../assets/images/Burst-Bloat.svg";
 import topology from "../assets/images/Topology-1.svg";
+import { Link } from 'react-router-dom';
 
 function JoinPrimeSection() {
     return (
@@ -48,13 +49,18 @@ function JoinPrimeSection() {
                 <div className="md:w-1/2"><img className="hidden md:block object-cover w-full h-full" src={sectionImg} alt="Older man and woman in a garden" /></div>
             </div>
             <div className='flex justify-center flex-col md:flex-row items-center mt-8'>
-                <button className="relative text-white bg-gradient-to-r from-[#0070FF] to-[#0070FF] h-[50px] rounded-[25px] w-[150px] font-saeada-light">
-                    <img src={whitePattern} alt="backgroundImg" className="opacity-20 w-full h-full object-cover top-0 absolute mix-blend-overlay " />
-                    <p>Join Community</p>
-                </button>
-                <button className="relative text-[#FF4D0A] border-[1.5px] mt-5 md:mt-0 md:ml-4 px-2 border-[#FF4D0A] h-[50px] rounded-[25px] w-[160px] font-saeada-regular">
-                    Become A Partner
-                </button>
+                <Link to="/prime-time-pals/registration/">
+                    <button className="relative text-white bg-gradient-to-r from-[#0070FF] to-[#0070FF] h-[50px] rounded-[25px] w-[150px] font-saeada-light">
+                        <img src={whitePattern} alt="backgroundImg" className="opacity-20 w-full h-full object-cover top-0 absolute mix-blend-overlay " />
+                        <p>Join Community</p>
+                    </button>
+                </Link>
+                <Link to="/prime-time-pals/partner/">
+                    <button className="relative text-[#FF4D0A] border-[1.5px] mt-5 md:mt-0 md:ml-4 px-2 border-[#FF4D0A] h-[50px] rounded-[25px] w-[160px] font-saeada-regular">
+                        Become A Partner
+                    </button>
+                </Link>
+                
             </div>
         </div>
     )

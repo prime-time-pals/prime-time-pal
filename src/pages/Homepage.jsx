@@ -7,7 +7,7 @@ import JoinPrimeSection from "../components/JoinPrimeSection";
 import Faqs from "../components/faqs/Faqs";
 import PartnerWithUs from "../components/PartnerWithUs";
 import Footer from "../components/Footer";
-import aboutImgLarge from "../assets/images/Side content.svg"
+import aboutImgLarge from "../assets/images/replace-1.jpg"
 import aboutImgSmall from "../assets/images/aboutSmall.svg"
 import heroImg from "../assets/images/hero-img.png";
 
