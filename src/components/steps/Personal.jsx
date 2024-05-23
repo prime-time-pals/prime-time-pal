@@ -68,7 +68,7 @@ export default function Personal({ data, handleChange, handleClick, steps, curre
                 </div>
                 <div className="col-span-full">
                     <div className="p-2 md:p-4 flex flex-col border rounded-md mt-4 border-gray-300">
-                    <label className="font-saeada-extraLight mb-4 font-bold tracking-widest">How did you hear about Prime Time Pals? If other, (Please specify).<span style={{color: 'red'}}>*</span></label>
+                    <label className="font-saeada-extraLight mb-4 font-bold tracking-widest">How did you hear about Prime Time Pal? If other, (Please specify).<span style={{color: 'red'}}>*</span></label>
                         <label className="radio-label mb-4">
                             <input type="radio" name="hearAbout" value="social media" onChange={handleChange} /> <span className="text-[14px] radio-text ml-2 font-bold tracking-widest font-saeada-extraLight">Social media (Facebook, Twitter, Instagram, etc.)</span>
                         </label>
@@ -89,7 +89,7 @@ export default function Personal({ data, handleChange, handleClick, steps, curre
                 </div>
                 <div className="col-span-full">
                     <div className="p-2 md:p-4 flex flex-col border rounded-md mt-4 border-gray-300">
-                    <label className="font-saeada-extraLight mb-4 font-bold tracking-widest">Why do you want to join Prime Time Pals? (Choose all that applies)<span style={{color: 'red'}}>*</span></label>
+                    <label className="font-saeada-extraLight mb-4 font-bold tracking-widest">Why do you want to join Prime Time Pal? (Choose all that applies)<span style={{color: 'red'}}>*</span></label>
                         <label className="radio-label mb-4">
                             <input type="checkbox" name="reasons" value="friendship" onChange={handleChange} /> <span className="text-[14px] radio-text ml-2 font-bold tracking-widest font-saeada-extraLight">Looking for friendship/companionship</span>
                         </label>

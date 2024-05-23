@@ -10,6 +10,7 @@ import Choices from "../components/steps/Choices";
 import Identification from "../components/steps/Identification";
 import Personal from "../components/steps/Personal";
 import { uploadImgHook, userCollection } from "../firebase/firebase";
+
 // import Payment from "../components/steps/Payment";
 
 export function Registration() {
@@ -127,7 +128,7 @@ export function Registration() {
     e.preventDefault();
     let newStep = currentStep;
 
-    if(direction === "next" && !validateForm(currentStep)) {
+    if(direction === "next"  && !validateForm(currentStep)) {
       return;
     }
 
@@ -145,9 +146,9 @@ export function Registration() {
     ))
 
     const user = await userCollection({ ...formData, image: downloadUrl });
-
+    
     if (user) {
-      enqueueSnackbar('Your message has been received! We will get back to you soon.', { 
+      enqueueSnackbar('Thank you for joining the waitlist for primetime pal. We’ll send updates to your email soon', { 
         variant: 'success',
         persist: true
       })
@@ -238,6 +239,7 @@ export function Registration() {
               steps={steps}
               setFormData={setFormData}
               formError={formError}
+              progress={progress}
               />
             )}
           </div>

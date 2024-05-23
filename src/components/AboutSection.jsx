@@ -16,22 +16,29 @@ function AboutSection({ largeImage }) {
 
     // const aboutImg = isMobile ? smallImage : largeImage;
     return (
-        <div className="mx-8 md:16 mb-10 mt-16 flex  items-center justify-center">
+        <div className="mx-8 md:16 mb-10 mt-16 flex items-center justify-center">
             <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/2">
-                    <img className="object-cover rounded-[20px] w-full md:w-[500px] h-full" src={largeImage} alt="image of old people" />
+                    <img className="object-cover rounded-[20px] w-full md:h-[576px] md:w-[500px] h-full" src={largeImage} alt="image of old people" />
                 </div>
                 <div className="mt-8 md:w-1/2">
-                    <h2 className="text-[#0070FF] font-bold mb-4 text-[30px] px-2 font-saeada-regular">About Prime Time Pals</h2>
+                    <h2 className="text-[#0070FF] font-bold mb-4 text-[30px] px-2 font-saeada-regular">About Prime Time Pal</h2>
                     <div>
                         <p className="text-[#4f4f4f] px-2 tracking-widest mb-4 font-saeada-light">
-                        A platform dedicated to combating loneliness and isolation among elderly individuals by fostering connections and support. With a mission centered on inclusivity and empathy, Prime Time Pals provides a welcoming environment where members can share experiences, forge friendships, and make lasting memories. 
+                            Prime Time Pal is dedicated to combating loneliness and isolation among older
+                            adults by organizing diverse events and activities. Because we understand the
+                            importance of connections, we also provide opportunities for socializing and fostering
+                            friendships. With a mission centered on inclusivity and empathy, Prime Time Pal
+                            provides a welcoming environment where members can share experiences, forge
+                            friendships, and make lasting memories.
                         </p>
                         <p className="text-[#4f4f4f] px-2 tracking-widest mb-4 font-saeada-light">
-                        The platform offers a range of features, including community forums, events, activities, and resources tailored to enhance the social experience and quality of life for its members. Through compassion and understanding, Prime Time Pals aims to uplift and empower elderly individuals as they navigate the journey of aging gracefully. 
+                            Our platform offers a diverse range of events and activities, specialized groups, and
+                            resources tailored to enhance the social experience.
                         </p>
                         <p className="text-[#4f4f4f] px-2 tracking-widest mb-4 font-saeada-light">
-                        Joining the community is easy and free, offering connections to older adults aged 50 to 70 in Nigeria and to explore new interests.
+                            Joining the community is easy and free, connecting older adults aged 50 to 70 in Nigeria
+                            to explore new interests and enjoy enriching experiences.
                         </p>
                     </div>
                     <div className="flex">

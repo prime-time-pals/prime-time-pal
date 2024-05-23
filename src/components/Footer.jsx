@@ -1,4 +1,4 @@
-import footerLogo from "../assets/images/footerLogo.svg";
+import footerLogo from "../assets/images/new-logo.svg";
 import whitePattern from "../assets/images/white-pattern.png"
 import socialLinks from "../assets/images/Social Media Links.svg"
 import { Link } from "react-router-dom";
