@@ -7,7 +7,7 @@ export default function Choices({ handleChange, handleClick, steps, currentStep,
         <div  id="myForm" className="grid gap-4 grid-cols-1 md:grid-cols-2"> 
                 <div className="col-span-full">
                     <div className="p-2 md:p-4 flex flex-col border rounded-md mt-4 border-gray-300">
-                    <label className="font-saeada-extraLight mb-4 font-bold tracking-widest">Do you have any specific hobbies or activities you'd like to participate in with the group? (Choose all that applies). If other, please specify<span style={{color: 'red'}}>*</span></label>
+                    <label className="font-saeada-extraLight mb-4 font-bold tracking-widest">Do you have any specific hobbies or activities you'd like to participate in within the community? (Choose all that applies). If other, please specify<span style={{color: 'red'}}>*</span></label>
                         <label className="radio-label mb-4">
                             <input type="checkbox" name="hobbies" value="arts and crafts" onChange={handleChange} /> <span className="text-[14px] radio-text ml-2 font-bold tracking-widest font-saeada-extraLight">Arts and crafts</span>
                         </label>
@@ -40,7 +40,7 @@ export default function Choices({ handleChange, handleClick, steps, currentStep,
                 </div>
                 <div className="col-span-full">
                     <div className="p-2 md:p-4 flex flex-col border rounded-md mt-4 border-gray-300">
-                    <label className="font-saeada-extraLight mb-4 font-bold tracking-widest">Are there any particular topics or themes you'd like to see discussed or explored within the group? (Check all that apply). If other, please specify.<span style={{color: 'red'}}>*</span></label>
+                    <label className="font-saeada-extraLight mb-4 font-bold tracking-widest">Are there any particular topics or themes you'd like to see discussed or explored within the community? (Check all that apply). If other, please specify.<span style={{color: 'red'}}>*</span></label>
                         <label className="radio-label mb-4">
                             <input type="checkbox" name="topics" value="health and wellness" onChange={handleChange} /> <span className="text-[14px] radio-text ml-2 font-bold tracking-widest font-saeada-extraLight">Health and wellness</span>
                         </label>

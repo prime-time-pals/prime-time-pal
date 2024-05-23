@@ -9,17 +9,20 @@ function JoinPrimeSection() {
         <div className="relative px:8 md:px-16 py-24 bg-black ">
             <img className='absolute w-10 right-14 top-10 md:right-16 md:top-16' src={burstBloat} alt="" />
             <img className='absolute w-24 left-6 bottom-16' src={topology} alt="" />
-            <h2 className='font-saeada-regular font-bold text-center px-8 mb-12 text-[28px] md:text-[34px] text-[#0070FF]'>Why Join Prime Time Pals?</h2>
+            <h2 className='font-saeada-regular font-bold text-center px-8 mb-12 text-[28px] md:text-[34px] text-[#0070FF]'>Why Join Prime Time Pal?</h2>
             <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/2 mr-6">
                     {/* first row */}
                     <div className="mx-8 md:flex justify-center gap-8">
                         <span className='text-[24px] font-saeada-regular  text-[#1EA3FF]'>01</span>
                         <div className='text-[#F6F6F6]'>
-                            <h3 className="text-[26px] font-saeada-light mb-6">Forge Meaningful Connections</h3>
+                            <h3 className="text-[26px] font-saeada-light mb-6">Diverse Events and Activities</h3>
                             <p className='mb-7 font-saeada-thin tracking-widest text-[14px] md:text-[16px] text-[#D1D1D1]'>
-                                Joining the Prime Time Pals community offers the opportunity to forge meaningful connections with like-minded individuals who share similar interests, experiences, and values. Through engaging discussions, group activities, and events, 
-                                members can build lasting friendships and support networks that enrich their lives.
+                            At Prime Time Pal, we believe that life should be filled with fun and excitement.
+                            That's why we organize a wide range of events and activities tailored to your interests
+                            and preferences. From cooking classes and art workshops to outdoor adventures and
+                            social gatherings, there's always something new and exciting to explore.
+
                             </p>
                         </div>
                     </div>
@@ -27,10 +30,14 @@ function JoinPrimeSection() {
                     <div className="mx-8 md:flex justify-center gap-8">
                         <span className='text-[24px] font-saeada-regular  text-[#1EA3FF]'>02</span>
                         <div className='text-[#F6F6F6]'>
-                            <h3 className="text-[26px] font-saeada-light mb-6">Access Valuable Resources & Activities</h3>
+                            <h3 className="text-[26px] font-saeada-light mb-6">Social Connections</h3>
                             <p className='mb-7 font-saeada-thin tracking-widest text-[14px] md:text-[16px] text-[#D1D1D1]'>
-                                Prime Time Pals provides access to a wealth of valuable resources, including articles, guides, and expert advice on topics related to health, wellness, and aging gracefully. Whether seeking information on nutrition, fitness, or mental well-being, members can find valuable insights 
-                                and support to help them navigate the challenges of aging with confidence and resilience.
+                            We understand the importance of relationships and connections in enriching our
+                            lives. Prime Time Pal provides a welcoming environment where you can meet
+                            like-minded individuals, share experiences, and forge lasting friendships. Whether you're
+                            looking for a workout buddy, a travel companion, or simply someone to chat with, you'll
+                            find it here.
+
                             </p>
                         </div>
                     </div>
@@ -38,10 +45,13 @@ function JoinPrimeSection() {
                     <div className="mx-8 md:flex justify-center gap-8">
                         <span className='text-[24px] font-saeada-regular text-[#1EA3FF]'>03</span>
                         <div className='text-[#F6F6F6]'>
-                            <h3 className="text-[26px] font-saeada-light mb-6">Experience a Sense of Belonging</h3>
+                            <h3 className="text-[26px] font-saeada-light mb-6">Supportive Community</h3>
                             <p className='mb-7 font-saeada-thin tracking-widest text-[14px] md:text-[16px] text-[#D1D1D1]'>
-                                By joining Prime Time Pals, members become part of a vibrant and inclusive community where they are valued, heard, and appreciated. The platform fosters a sense of belonging and camaraderie, offering a supportive environment 
-                                where members can share stories, seek advice, and celebrate life's moments together.
+                            Our community is built on inclusivity, empathy, and support. Whether you're
+                            navigating the challenges of aging, seeking advice, or simply looking for a listening ear,
+                            you'll find a supportive network of members ready to lend a helping hand and offer
+                            encouragement.
+
                             </p>
                         </div>
                     </div>

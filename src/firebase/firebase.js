@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, addDoc  } from "firebase/firestore";
+import { getFirestore, collection, addDoc, doc  } from "firebase/firestore";
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
 const firebaseApp = initializeApp({
@@ -67,6 +67,7 @@ const firebaseApp = initializeApp({
     try {
         const docRef = await addDoc(collection(db, "users"), userDoc);
         console.log("Document written with ID", docRef.id)
+        return docRef;
     } catch (e) {
         console.error("Error adding document: ", e);
     }

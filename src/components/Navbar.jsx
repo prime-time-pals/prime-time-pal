@@ -149,7 +149,7 @@
 // export default Navbar;
 
 import { useState } from "react";
-import logo from "../assets/images/LOGO.svg"
+import logo from "../assets/images/new-logo.svg"
 import hamburger from "../assets/images/Frame 60.svg"
 import close from "../assets/images/Close.svg"
 import whitePattern from "../assets/images/white-pattern.png"
