@@ -2,7 +2,7 @@ import upload from "../../assets/images/upload.svg"
 import whitePattern from "../../assets/images/pattern-svg.svg";
 import { useState } from "react";
 
-export default function Identification({ handleChange, formError, progress, handleClick, steps, setFormData, currentStep }) {
+export default function Identification({ handleChange, formError, progress, handleClick, steps, setFormData, isDisabled, currentStep }) {
     console.log(progress);
     const [selectedFileName, setSelectedFileName] = useState('');
 
@@ -35,7 +35,7 @@ export default function Identification({ handleChange, formError, progress, hand
                 </div>
             </div>
             <div className="col-span-full">
-                <button onClick={(e)=>handleClick("next", e)} className="outline-none border-none col-span-full relative text-white bg-gradient-to-r from-[#0070FF] to-[#0070FF] h-[50px] rounded-[25px] w-full font-saeada-light">
+                <button onClick={(e)=>handleClick("next", e)} disabled={isDisabled} className="outline-none border-none col-span-full relative text-white bg-gradient-to-r from-[#0070FF] to-[#0070FF] h-[50px] rounded-[25px] w-full font-saeada-light">
                     <img src={whitePattern} alt="background Image" className="opacity-20 w-full h-full object-cover top-0 absolute mix-blend-overlay " />
                     {
                         

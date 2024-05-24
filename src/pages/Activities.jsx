@@ -11,7 +11,8 @@ function Activities() {
             <div className="my-[60px] mx-8 md:my-[120px] md:text-center text-left">
                 <h2 className="text-[#0070FF] font-bold mb-4  text-[30px] font-saeada-regular">Exciting Activities Coming Your Way!</h2>
                 <p className="text-[#4f4f4f] tracking-widest font-bold mb-12 font-saeada-thin">
-                    Stay tuned for a variety of fun-filled experiences. 
+                Stay tuned for snippets of the community events.
+
                     
                 </p>
                 <div className="flex justify-center items-center flex-col md:flex-row">

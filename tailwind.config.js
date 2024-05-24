@@ -13,7 +13,16 @@ export default {
         'saeada-thin': ['LTSaeada-thin', 'sans-serif'],
         'saeada-light': ['LTSaeada-light', 'sans-serif'],
         'saeada-extraLight': ['LTSaeada-extraLight', 'sans-serif'],
-      }
+      },
+      keyframes: {
+        pulsate: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.1)' },
+        },
+      },
+      animation: {
+        pulsate: 'pulsate 1.5s infinite',
+      },
     },
   },
   plugins: [],

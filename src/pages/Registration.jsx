@@ -16,6 +16,7 @@ import { uploadImgHook, userCollection } from "../firebase/firebase";
 export function Registration() {
   const [progress, setProgress] = useState(0);
   const [currentStep, setCurrentStep] = useState(1);
+  const [isDisabled, setIsDisabled] = useState(false);
   const [formError, setFormError] = useState({});
   const [formData, setFormData] = useState({
     firstname: '',
@@ -137,6 +138,7 @@ export function Registration() {
     newStep > 0 && newStep <= steps.length && setCurrentStep(newStep);
 
     if (currentStep === steps.length) {
+      setIsDisabled(true);
       const downloadUrl = await uploadImgHook(formData.image, setProgress);
       setFormData(prev => (
         {
@@ -148,7 +150,7 @@ export function Registration() {
     const user = await userCollection({ ...formData, image: downloadUrl });
     
     if (user) {
-      enqueueSnackbar('Thank you for joining the waitlist for primetime pal. We’ll send updates to your email soon', { 
+      enqueueSnackbar('Thank you for joining the waitlist for primetime pal. We’ll send updates to you soon', { 
         variant: 'success',
         persist: true
       })
@@ -240,6 +242,7 @@ export function Registration() {
               setFormData={setFormData}
               formError={formError}
               progress={progress}
+              isDisabled={isDisabled}
               />
             )}
           </div>

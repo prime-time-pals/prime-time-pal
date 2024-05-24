@@ -4,16 +4,16 @@ import whitePattern from "../assets/images/pattern-svg.svg"
 function AboutSection2({ largeImage, smallImage }) {
     const [isMobile, setIsMobile] = useState(false);
 
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 768); // Change 768 to your breakpoint
-        };
-        handleResize(); // Initial check
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
+    // useEffect(() => {
+    //     const handleResize = () => {
+    //         setIsMobile(window.innerWidth < 768); // Change 768 to your breakpoint
+    //     };
+    //     handleResize(); // Initial check
+    //     window.addEventListener("resize", handleResize);
+    //     return () => window.removeEventListener("resize", handleResize);
+    // }, []);
 
-    const aboutImg = isMobile ? smallImage : largeImage;
+    // const aboutImg = isMobile ? smallImage : largeImage;
     return (
         <div className="mx-8 md:mx-16 mb-10 mt-16 flex  items-center justify-center">
             <div className="flex gap-8 flex-col-reverse md:flex-row">
@@ -40,7 +40,7 @@ function AboutSection2({ largeImage, smallImage }) {
                     </div>
                 </div>
                 <div className="md:w-1/2">
-                    <img className="object-cover w-full h-full" src={aboutImg} alt="image of old people" />
+                    <img className="object-cover w-full h-full" src={largeImage} alt="image of old people" />
                 </div>
             </div>
         </div>
