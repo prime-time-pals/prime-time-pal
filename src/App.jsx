@@ -58,7 +58,7 @@ const Contact = lazy(() => import('./pages/Contact'));
 const Homepage = lazy(() => import('./pages/Homepage'));
 const Partner = lazy(() => import('./pages/Partner'));
 const Activities = lazy(() => import('./pages/Activities'));
-const Registration = lazy(() => import('./pages/Registration'));
+import { Registration } from "./pages/Registration";
 
 function App() {
   const router = createBrowserRouter([
