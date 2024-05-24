@@ -1,6 +1,6 @@
 import whitePattern from "../assets/images/pattern-svg.svg";
 import hands from "../assets/images/hands.svg";
-import drinks from "../assets/images/senior-couple.jpg";
+import drinks from "../assets/images/replace-1.jpg";
 import people from "../assets/images/latino-hair.jpg";
 import { Link } from "react-router-dom";
 

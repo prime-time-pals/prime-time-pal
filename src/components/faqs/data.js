@@ -17,8 +17,8 @@ const data = [
     },
     {
         question: "Is there a cost to join Prime Time Pal?",
-        answer: "No, joining Prime Time Pals NG is free. However, some activities or events may have associated costs, which will be clearly communicated to members in advance." 
-       
+        answer: "No, joining Prime Time Pal is free. However, some activities or events may have associated costs, which will be clearly communicated to members in advance." 
+        
     },
     {
         question: "What types of activities and events are available on Prime Time Pal?",

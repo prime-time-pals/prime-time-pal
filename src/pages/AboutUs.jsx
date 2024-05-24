@@ -4,7 +4,7 @@ import shape from "../assets/images/shape-sbg.svg"
 import LittleDetail from "../components/LittleDetail";
 import PartnerWithUs from "../components/PartnerWithUs";
 import Footer from "../components/Footer";
-import aboutImgLarge from "../assets/images/aboutAL.svg";
+import aboutImgLarge from "../assets/images/senior-couple.jpg";
 import aboutImgSmall from "../assets/images/aboutAS.svg";
 import heroImg from "../assets/images/aboutHeroL.svg";
 import AboutSection2 from "../components/AboutSection2";
