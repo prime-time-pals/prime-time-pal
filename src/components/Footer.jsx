@@ -61,7 +61,7 @@ function Footer() {
                 <a target="_blank" href="https://medium.com/@primetimepalsng/terms-and-conditions-for-primetimepalsng-61f9db527d7b">
                 <p className="my-4">Terms of Service</p>
                 </a>
-                <p className="text-[#FF4D0A]">Copyright@PrimeTimePals{new Date().getFullYear()}</p>
+                <p className="text-[#FF4D0A]">Copyright@PrimeTimePal{new Date().getFullYear()}</p>
             </div>
         </div>
     )

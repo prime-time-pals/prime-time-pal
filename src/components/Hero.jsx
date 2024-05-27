@@ -10,11 +10,8 @@ function Hero({ heroImg, buttonText }) {
                 <p className="text-[#4f4f4f] mt-4 font-bold tracking-widest font-saeada-thin"><span className="font-saeada-regular font-normal">Prime Time Pal</span> is a groundbreaking social community revolutionizing the way older adults
                     experience leisure and socialization. Prime Time Pal is designed to bring older adults together
                     for engaging activities, meaningful connections, and invaluable support. <br /> Join in creating lasting memories and explore exciting activities together. Together, we’ll make
-every moment count.
-
-                </p>
-                <p className="text-[#4f4f4f] mt-3 font-bold tracking-widest hidden md:block font-saeada-thin">Join in creating lasting memories and explore exciting activities together. Together, we’ll make
                     every moment count.
+
                 </p>
                 <Link to="/prime-time-pals/registration/">
                     <button className="mb-10 relative mt-8 px-2 text-white bg-gradient-to-r from-[#0070FF] to-[#0070FF] h-[50px] rounded-[25px] w-[150px] font-saeada-light">
