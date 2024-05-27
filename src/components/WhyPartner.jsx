@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function WhyPartner() {
     return (
         <div className="text-center p-8 md:mt-12">
-            <h2 className="text-[28px] md:text-[36px] font-saeada-regular md:font-bold mb-4 md:mb-8 text-[#0684FF] text-center">Why Partner with Prime Time Pals</h2>
+            <h2 className="text-[28px] md:text-[36px] font-saeada-regular md:font-bold mb-4 md:mb-8 text-[#0684FF] text-center">Why Partner with Prime Time Pal</h2>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
                 <div className="p-4 mb-4 justify-center rounded-[20px] border border-gray-300">
                     <img className="h-[170px] md:h-[220px] rounded-t-[8px] object-cover w-full" src={drinks} alt="" />

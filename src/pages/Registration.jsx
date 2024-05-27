@@ -7,14 +7,14 @@ import Footer from "../components/Footer";
 
 
 import Choices from "../components/steps/Choices";
-import Identification from "../components/steps/Identification";
 import Personal from "../components/steps/Personal";
-import { uploadImgHook, userCollection } from "../firebase/firebase";
+import { userCollection } from "../firebase/firebase";
 
 // import Payment from "../components/steps/Payment";
 
 export function Registration() {
-  const [progress, setProgress] = useState(0);
+  const [progress, setProgress] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [currentStep, setCurrentStep] = useState(1);
   const [isDisabled, setIsDisabled] = useState(false);
   const [formError, setFormError] = useState({});
@@ -31,14 +31,11 @@ export function Registration() {
     involvement: '',
     accessibility: '',
     volunteering: '',
-    image: null,
-    additional: ''
   });
   
   const steps = [
     "Personal",
     "Choices",
-    "Identification"
   ];
 
   const validateForm = (step) => {
@@ -82,12 +79,6 @@ export function Registration() {
       }
       if(!formData.volunteering) {
         errors.volunteering = "Please select an option";
-      }
-    }
-
-    if(step === 3) {
-      if(!formData.image) {
-        errors.image = "Please upload a valid means of identification";
       }
     }
 
@@ -139,17 +130,18 @@ export function Registration() {
 
     if (currentStep === steps.length) {
       setIsDisabled(true);
-      const downloadUrl = await uploadImgHook(formData.image, setProgress);
-      setFormData(prev => (
-        {
-          ...prev,
-          image: downloadUrl
-        }
-    ))
+      // const downloadUrl = await uploadImgHook(formData.image, setProgress);
+    //   setFormData(prev => (
+    //     {
+    //       ...prev,
+    //       image: downloadUrl
+    //     }
+    // ))
 
-    const user = await userCollection({ ...formData, image: downloadUrl });
+    const user = await userCollection( formData, setProgress );
     
     if (user) {
+      setIsSubmitted(true);
       enqueueSnackbar('Thank you for joining the waitlist for primetime pal. We’ll send updates to you soon', { 
         variant: 'success',
         persist: true
@@ -200,7 +192,7 @@ export function Registration() {
     <>
     <div className="mx-8">
     <SnackbarProvider />
-      <h2 className="font-saeada-regular text-[22px] mt-28 text-[#0070ff] mb-4 font-bold md:text-[30px] text-center">Join Prime TIme Pals</h2>
+      <h2 className="font-saeada-regular text-[22px] mt-28 text-[#0070ff] mb-4 font-bold md:text-[30px] text-center">Join the waitlist</h2>
       <p className="text-[#4f4f4f] text-center mt-3 font-bold tracking-widest hidden md:block font-saeada-thin">Join us on an adventure and journey that transcends geographical boundaries, uniting hearts nationwide.</p>
       <div className="sm:w-1/2 mx-auto pb-2 bg-white">
       <div className="container horizontal mt-5">
@@ -230,9 +222,12 @@ export function Registration() {
                 currentStep={currentStep}
                 steps={steps}
                 formError={formError}
+                progress={progress}
+                isDisabled={isDisabled}
+                isSubmitted={isSubmitted}
               />
             )}
-            {currentStep === 3 && (
+            {/* {currentStep === 3 && (
               <Identification
               data={formData}
               handleChange={handleChange}
@@ -244,7 +239,7 @@ export function Registration() {
               progress={progress}
               isDisabled={isDisabled}
               />
-            )}
+            )} */}
           </div>
         </form>
         </div>

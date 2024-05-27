@@ -64,22 +64,21 @@ const Stepper = ({steps, currentStep}) => {
 
     const displaySteps = newStep.map((step, index) => {
         return (
-           
-              <div key={index} className="w-full flex items-center">
+              <div key={index} className="flex items-center">
                 <div className="flex flex-col items-center">
                     <div className="flex items-center">
                         <div className={`min-w-[100px] sm:min-w-[170px] md:min-w-[170px] border-t-2 transition duration-500 ease-in-out ${
                             step.description === 'Personal' && step.completed ? "border-[#0070ff]" :
-                            step.description === 'Choices' && step.highlighted ? "border-[#FF3301]" :
-                            step.description === 'Identification' && step.highlighted ? "border-[#A92473]" : "border-gray-300" 
+                            step.description === 'Choices' && step.highlighted ? "border-[#FF3301]" : "border-gray-300"
+                            // step.description === 'Identification' && step.highlighted ? "border-[#A92473]" : "border-gray-300" 
                             }`}>
                         </div>
                         <div className={`rounded-full transition duration-500 ease-in-out border-2
                                        h-4 w-4 flex items-center justify-center 
                                      ${
                                         step.description === 'Personal' && step.highlighted ? "bg-[#0070ff] border-[#0070ff]" :
-                                        step.description === 'Choices' && step.highlighted ? "bg-[#FF3301] border-[#FF3301]" :
-                                        step.description === 'Identification' && step.highlighted ? "bg-[#A92473] border-[#A92473]" : ""
+                                        step.description === 'Choices' && step.highlighted ? "bg-[#FF3301] border-[#FF3301]" : ""
+                                        // step.description === 'Identification' && step.highlighted ? "bg-[#A92473] border-[#A92473]" : ""
                                      }`}
                                      >
                              {step.completed ? (
@@ -94,8 +93,8 @@ const Stepper = ({steps, currentStep}) => {
                             text-xs font-medium  
                             ${
                                 step.description === 'Personal' && step.highlighted ? "text-[#0070ff]" :
-                                step.description === 'Choices' && step.highlighted ? "text-[#FF3301]" :
-                                step.description === 'Identification' && step.highlighted ? "text-[#A92473]" : "text-[#B0B0B0]"
+                                step.description === 'Choices' && step.highlighted ? "text-[#FF3301]" : "text-[#B0B0B0]"
+                                // step.description === 'Identification' && step.highlighted ? "text-[#A92473]" : "text-[#B0B0B0]"
 
                             }`}>
                                 {step.description}
