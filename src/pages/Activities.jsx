@@ -16,13 +16,13 @@ function Activities() {
                     
                 </p>
                 <div className="flex justify-center items-center flex-col md:flex-row">
-                    <Link to="/prime-time-pals/registration/">
+                    <Link to="/prime-time-pal/registration/">
                         <button className="relative mb-4 md:mb-0 text-white bg-gradient-to-r from-[#0070FF] to-[#0070FF] h-[50px] rounded-[25px] w-[160px] font-saeada-light">
                             <img src={whitePattern} alt="backgroundImg" className="opacity-20 w-full h-full object-cover top-0 absolute mix-blend-overlay " />
                             <p>Join Community</p>
                         </button>
                     </Link>
-                    <Link to="/prime-time-pals/partner/">
+                    <Link to="/prime-time-pal/partner/">
                         <button className=" text-[#FF4D0A] border-[1.5px] md:ml-4 px-2 border-[#FF4D0A] h-[50px] rounded-[25px] w-[160px]  font-saeada-regular">
         
                             Become A Partner

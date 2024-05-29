@@ -162,18 +162,18 @@ function Navbar() {
     return (
         <nav className="lg:flex items-center justify-between m-6 md:m-14 relative">
             <div className="flex items-center justify-between w-full">
-                <Link to="/prime-time-pals/">
+                <Link to="/prime-time-pal/">
                     <header><img src={logo} alt="logo" /></header>
                 </Link>
                 <div className="hidden lg:flex md:justify-center lg:items-center">
                   <ul className="md:flex gap-8">
-                    <li><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/">Home</Link></li>
-                    <li><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/about-us' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/about-us">About Us</Link></li>
-                    <li><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/activities' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/activities">Activities</Link></li>
-                    <li><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/partner' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/partner">Partner With Us</Link></li>
-                    <li><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/contact' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/contact">Contact Us</Link></li>
+                    <li><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pal/' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pal/">Home</Link></li>
+                    <li><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pal/about-us' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pal/about-us">About Us</Link></li>
+                    <li><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pal/activities' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pal/activities">Activities</Link></li>
+                    <li><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pal/partner' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pal/partner">Partner With Us</Link></li>
+                    <li><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pal/contact' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pal/contact">Contact Us</Link></li>
                   </ul>
-                  <Link to="/prime-time-pals/registration/">
+                  <Link to="/prime-time-pal/registration/">
                     <button className="relative text-white bg-gradient-to-r from-[#0070FF] to-[#0070FF] h-[50px] rounded-[25px] w-[150px] lg:ml-6 font-saeada-light">
                         <img src={whitePattern} alt="backgroundImg" className="opacity-20 w-full h-full object-cover top-0 absolute mix-blend-overlay " />
                         <p>Join Community</p>
@@ -208,21 +208,21 @@ function Navbar() {
                         <img src={close} width={30} height={30} alt="close" />
                     </button>
                     <ul className="lg:flex gap-8 mt-8">
-                        <li className="mb-8"><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/">Home</Link></li>
-                        <li className="mb-8"><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/about-us' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/about-us">About Us</Link></li>
-                        <li className="mb-8"><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/activities' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/activities">Activities</Link></li>
-                        <li className="mb-8"><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/partner' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/partner">Partner With Us</Link></li>
-                        <li className="mb-8"><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pals/contact' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pals/contact">Contact Us</Link></li>
+                        <li className="mb-8"><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pal/' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pal/">Home</Link></li>
+                        <li className="mb-8"><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pal/about-us' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pal/about-us">About Us</Link></li>
+                        <li className="mb-8"><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pal/activities' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pal/activities">Activities</Link></li>
+                        <li className="mb-8"><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pal/partner' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pal/partner">Partner With Us</Link></li>
+                        <li className="mb-8"><Link className={`font-saeada-light block ${location.pathname === '/prime-time-pal/contact' ? 'text-[#FF4D0A]' : 'text-[#525252]'}`} to="/prime-time-pal/contact">Contact Us</Link></li>
                     </ul>
                     <div className="flex justify-center items-center">
-                        <Link to="/prime-time-pals/partner/">
+                        <Link to="/prime-time-pal/contact/">
                             <button className="block text-center text-[#FF4D0A] border-[1.5px]  border-[#FF4D0A] h-[50px] rounded-[25px] w-[160px] font-saeada-regular">
                                 
                                 Become A Partner
                             </button>
                         </Link>
                     </div>
-                    <Link to="/prime-time-pals/registration/">
+                    <Link to="/prime-time-pal/registration/">
                         <button className="relative text-white bg-gradient-to-r from-[#0070FF] to-[#0070FF] h-[50px] rounded-[25px] w-[150px] mt-6 font-saeada-light">
                             <img src={whitePattern} alt="backgroundImg" className="opacity-20 w-full h-full object-cover top-0 absolute mix-blend-overlay " />
                             <p>Join Community</p>

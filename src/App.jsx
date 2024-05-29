@@ -13,27 +13,27 @@ import { Registration } from "./pages/Registration";
 function App() {
   const router = createBrowserRouter([
     {
-      path: '/prime-time-pals/',
+      path: '/prime-time-pal/',
       element: <Homepage />,
     },
     {
-      path:'/prime-time-pals/about-us/',
+      path:'/prime-time-pal/about-us/',
       element: <AboutUs />
     },
     {
-      path:'/prime-time-pals/contact/',
+      path:'/prime-time-pal/contact/',
       element: <Contact />
     },
     {
-      path:'/prime-time-pals/partner/',
+      path:'/prime-time-pal/partner/',
       element: <Partner />
     },
     {
-      path:'/prime-time-pals/activities/',
+      path:'/prime-time-pal/activities/',
       element: <Activities />
     },
     {
-      path:'/prime-time-pals/registration/',
+      path:'/prime-time-pal/registration/',
       element: <Registration />
     }
   ])

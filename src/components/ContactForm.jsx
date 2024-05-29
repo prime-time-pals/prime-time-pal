@@ -16,13 +16,12 @@ function ContactForm() {
     // };
 
     const sendEmail = () => {
-        console.log("code gets to this point")
         emailjs
           .sendForm(
-            "service_eahmcs9",
+            "service_62hdxkg",
             "contact_form",
             form.current,
-            "UfB4pSdLlpE4v_uk5"
+            "gw9i_GpL0pKGAexmA"
           )
           .then(
             (result) => {
