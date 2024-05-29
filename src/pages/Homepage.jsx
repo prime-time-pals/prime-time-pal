@@ -15,7 +15,7 @@ function Homepage() {
     return (
         <div className="overflow-x-hidden">
             <Navbar />
-            <Hero heroImg={heroImg} buttonText='Join Community'/>
+            <Hero heroImg={heroImg} buttonText='Join Community' link="/prime-time-pal/registration/"/>
             <img className="hidden md:block" src={shape} alt="oval shapes" />
             <LittleDetail />
             <AboutSection  largeImage = {aboutImgLarge} smallImage = {aboutImgSmall} />

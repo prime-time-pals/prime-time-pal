@@ -13,7 +13,7 @@ function Partner() {
     return (
         <div className="overflow-x-hidden">
             <Navbar />
-            <Hero heroImg={heroImg} buttonText='Become A Partner' />
+            <Hero heroImg={heroImg} buttonText='Become A Partner' link="/prime-time-pal/contact/" />
             <img className="hidden md:block" src={shape} alt="oval shapes" />
             <LittleDetail />
             <WhyPartner />

@@ -42,13 +42,13 @@ function AboutSection({ largeImage }) {
                         </p>
                     </div>
                     <div className="flex">
-                        <Link to="/prime-time-pals/about-us">
+                        <Link to="/prime-time-pal/about-us">
                             <button className="relative text-white bg-gradient-to-r from-[#0070FF] to-[#0070FF] h-[50px] rounded-[25px] w-[100px] font-saeada-light">
                                 <img src={whitePattern} alt="backgroundImg" className="opacity-20 w-full h-full object-cover top-0 absolute mix-blend-overlay " />
                                 <p>Read More</p>
                             </button>
                         </Link>
-                        <Link to="/prime-time-pals/partner">
+                        <Link to="/prime-time-pal/contact">
                             <button className="relative text-[#FF4D0A] border-[1.5px] ml-4 px-2 border-[#FF4D0A] h-[50px] rounded-[25px] w-[160px] font-saeada-regular">   
                                 Become A Partner
                             </button>

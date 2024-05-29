@@ -59,13 +59,13 @@ function JoinPrimeSection() {
                 <div className="md:w-1/2"><img className="hidden md:block object-cover w-full h-full" src={sectionImg} alt="Older man and woman in a garden" /></div>
             </div>
             <div className='flex justify-center flex-col md:flex-row items-center mt-8'>
-                <Link to="/prime-time-pals/registration/">
+                <Link to="/prime-time-pal/registration/">
                     <button className="relative text-white bg-gradient-to-r from-[#0070FF] to-[#0070FF] h-[50px] rounded-[25px] w-[150px] font-saeada-light">
                         <img src={whitePattern} alt="backgroundImg" className="opacity-20 w-full h-full object-cover top-0 absolute mix-blend-overlay " />
                         <p>Join Community</p>
                     </button>
                 </Link>
-                <Link to="/prime-time-pals/partner/">
+                <Link to="/prime-time-pal/contact/">
                     <button className="relative text-[#FF4D0A] border-[1.5px] mt-5 md:mt-0 md:ml-4 px-2 border-[#FF4D0A] h-[50px] rounded-[25px] w-[160px] font-saeada-regular">
                         Become A Partner
                     </button>

@@ -15,7 +15,7 @@ function PartnerWithUs() {
                 events tailored for them, share valuable resources, and make a positive difference in our
                 community. 
                 </p>
-                <Link to="/prime-time-pals/partner/">
+                <Link to="/prime-time-pal/contact/">
                     <button className="relative text-[#FF4D0A] bg-[#f6f6f6] mb-6 border-[1.5px] px-2 border-[#FF4D0A] h-[60px] md:h-[70px] rounded-[35px] w-[160px] md:w-[250px] font-saeada-regular md:text-[24px]">
                         Become A Partner
                     </button>

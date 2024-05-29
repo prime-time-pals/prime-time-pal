@@ -3,14 +3,14 @@ import { getFirestore, collection, addDoc  } from "firebase/firestore";
 // import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
 const firebaseApp = initializeApp({
-    apiKey: "AIzaSyBm4EYV2guS5xNra_uoJOfyH4_GKqwcrLE",
-    authDomain: "prime-time-pals.firebaseapp.com",
-    projectId: "prime-time-pals",
-    storageBucket: "prime-time-pals.appspot.com",
-    messagingSenderId: "94046890357",
-    appId: "1:94046890357:web:85054ee5f4466cf9c78b3c",
-    measurementId: "G-XGV2K3MK53"
-  });
+  apiKey: "AIzaSyD9Ws21ZTOYcj1-rwIsNbM--PvGoSqh4Ls",
+  authDomain: "prime-time-pal.firebaseapp.com",
+  projectId: "prime-time-pal",
+  storageBucket: "prime-time-pal.appspot.com",
+  messagingSenderId: "358220552084",
+  appId: "1:358220552084:web:37926c21d0d9c31564a181",
+  measurementId: "G-WWVKYX5EYV"
+});
 
   const db = getFirestore(firebaseApp);
   // const storage = getStorage();

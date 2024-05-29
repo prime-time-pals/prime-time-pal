@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import whitePattern from "../assets/images/white-pattern.png"
 
-function Hero({ heroImg, buttonText }) {
+function Hero({ heroImg, buttonText, link }) {
     return (
         <section className="gap-8 md:flex m-8 md:justify-center pt-8 md:h-[500px]">
             <div className="md:w-[500px]">
@@ -13,7 +13,7 @@ function Hero({ heroImg, buttonText }) {
                     every moment count.
 
                 </p>
-                <Link to="/prime-time-pals/registration/">
+                <Link to={link}>
                     <button className="mb-10 relative mt-8 px-2 text-white bg-gradient-to-r from-[#0070FF] to-[#0070FF] h-[50px] rounded-[25px] w-[150px] font-saeada-light">
                         <img src={whitePattern} alt="backgroundImg" className="opacity-20 w-full h-full object-cover top-0 absolute mix-blend-overlay " />
                         <p>{buttonText}</p>

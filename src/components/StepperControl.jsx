@@ -9,7 +9,7 @@ const StepperControl = ({handleClick, steps, currentStep}) => {
 
             {
                 currentStep === 1 ?
-                <Link to='/prime-time-pals/'>
+                <Link to='/prime-time-pal/'>
                     <button className='absolute top-12 left-4 md:left-12 uppercase py-2 px-4 rounded-xl font-semibold cursor-pointer opacity-100'>
                         <img src={backIcon} alt="back icon" />
                     </button>
