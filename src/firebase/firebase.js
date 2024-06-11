@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, addDoc  } from "firebase/firestore";
+import { getFirestore, collection, addDoc, getDocs, getDoc  } from "firebase/firestore";
 // import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
 const firebaseApp = initializeApp({
@@ -74,5 +74,23 @@ const firebaseApp = initializeApp({
         console.error("Error adding document: ", e);
     }
   }
+
+  export const getCollection = async() => {
+    try {
+      const querySnapshot = await getDocs(collection(db, "users"));
+      const users = [];
+      querySnapshot.forEach((doc) => {
+        console.log(doc.id, " => ", doc.data());
+        users.push({ id: doc.id, ...doc.data() })
+      });
+      return users;
+    } catch(e) {
+      console.error("Error fetching collection: ", e);
+      return [];
+    }
+  }
+    
+
+  
 
   console.log('Hello there, Firestore!')

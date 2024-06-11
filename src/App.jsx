@@ -8,37 +8,54 @@ import Homepage from "./pages/Homepage";
 import Partner from "./pages/Partner";
 import Activities from "./pages/Activities";
 import { Registration } from "./pages/Registration";
+import Register from "./administration/Register";
+import Login from "./administration/Login";
+import { AuthContext } from "./Context/AuthContext";
+import { Protected } from "./pages/Protected";
+import Dashboard from "./administration/Dashboard";
 
 
 function App() {
   const router = createBrowserRouter([
     {
-      path: '/prime-time-pal/',
+      path: '/',
       element: <Homepage />,
     },
     {
-      path:'/prime-time-pal/about-us/',
+      path:'/about-us/',
       element: <AboutUs />
     },
     {
-      path:'/prime-time-pal/contact/',
+      path:'/contact/',
       element: <Contact />
     },
     {
-      path:'/prime-time-pal/partner/',
+      path:'/partner/',
       element: <Partner />
     },
     {
-      path:'/prime-time-pal/activities/',
+      path:'/activities/',
       element: <Activities />
     },
     {
-      path:'/prime-time-pal/registration/',
+      path:'/registration/',
       element: <Registration />
+    },
+    {
+      path:'/admin/signup/',
+      element: <Register />
+    },
+    {
+      path:'/admin/login/',
+      element: <Login />
+    },
+    {
+      path:'/admin/dashboard/',
+      element: <Protected><Dashboard /></Protected>
     }
   ])
 
-  return <RouterProvider router = {router} />
+  return <AuthContext><RouterProvider router = {router} /></AuthContext>
 }
 
 export default App;
@@ -61,27 +78,27 @@ export default App;
 // function App() {
 //   const router = createBrowserRouter([
 //     {
-//       path: '/prime-time-pals/',
+//       path: 's/',
 //       element: <Homepage />,
 //     },
 //     {
-//       path: '/prime-time-pals/about-us/',
+//       path: 's/about-us/',
 //       element: <AboutUs />
 //     },
 //     {
-//       path: '/prime-time-pals/contact/',
+//       path: 's/contact/',
 //       element: <Contact />
 //     },
 //     {
-//       path: '/prime-time-pals/partner/',
+//       path: 's/partner/',
 //       element: <Partner />
 //     },
 //     {
-//       path: '/prime-time-pals/activities/',
+//       path: 's/activities/',
 //       element: <Activities />
 //     },
 //     {
-//       path: '/prime-time-pals/registration/',
+//       path: 's/registration/',
 //       element: <Registration />
 //     }
 //   ]);

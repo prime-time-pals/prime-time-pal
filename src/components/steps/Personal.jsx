@@ -100,13 +100,13 @@ export default function Personal({ data, handleChange, handleClick, steps, curre
                             <input type="checkbox" name="reasons" value="hobbies" onChange={handleChange} /> <span className="text-[14px] radio-text ml-2 font-bold tracking-widest font-saeada-extraLight">Looking for people to share hobbies with</span>
                         </label>
                         <label className="radio-label mb-4">
-                            <input type="checkbox" name="reasons" value="spendTime" onChange={handleChange} /> <span className="text-[14px] radio-text ml-2 font-bold tracking-widest font-saeada-extraLight">Looking to kill time once in a while</span>
+                            <input type="checkbox" name="reasons" value="spend time" onChange={handleChange} /> <span className="text-[14px] radio-text ml-2 font-bold tracking-widest font-saeada-extraLight">Looking to kill time once in a while</span>
                         </label>
                         <label className="radio-label mb-4">
                             <input type="checkbox" name="reasons" value="partner" onChange={handleChange} /> <span className="text-[14px] radio-text ml-2 font-bold tracking-widest font-saeada-extraLight">Looking for a partner</span>
                         </label>
                         <label className="radio-label mb-4">
-                            <input type="checkbox" name="reasons" value="travelCompanion" onChange={handleChange} /> <span className="text-[14px] radio-text ml-2 font-bold tracking-widest font-saeada-extraLight">Looking for travel buddies</span>
+                            <input type="checkbox" name="reasons" value="travel companion" onChange={handleChange} /> <span className="text-[14px] radio-text ml-2 font-bold tracking-widest font-saeada-extraLight">Looking for travel buddies</span>
                         </label>
                     </div>
                     {formError.reasons && <span id="reasonsError" className="font-saeada-extraLight tracking-widest text-red-500 text-xs">{formError.reasons}</span>}

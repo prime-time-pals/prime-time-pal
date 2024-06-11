@@ -16,7 +16,7 @@ function AboutUs() {
     return (
         <div>
             <Navbar />
-            <Hero heroImg={heroImg} buttonText='Join Community' link="/prime-time-pal/registration/" />
+            <Hero heroImg={heroImg} buttonText='Join Community' link="/registration/" />
             <img className="hidden md:block" src={shape} alt="oval shapes" />
             <LittleDetail />
             <AboutSection2  largeImage = {aboutImgLarge} smallImage = {aboutImgSmall} />
